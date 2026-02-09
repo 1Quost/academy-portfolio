@@ -1,0 +1,9 @@
+<div class="multi-select-container">
+    <label *ngFor="let item of items" class="multi-select-item">
+        <input
+            type="checkbox"
+            [checked]="isSelected(item)"
+            (change)="toggleSelection(item)" />
+        {{ item.name }}
+    </label>
+</div>
